@@ -28,7 +28,7 @@ for i in range(SCREENSHOTS):
         # Send the message by attaching the photo
         response = requests.post(discord_webhook, data=payload, files=files)
 
-        # Useful for debugging
+         Useful for debugging
         if response.status_code == 200:
             print(f"Screenshot {i+1}/{SCREENSHOTS} successfully sent to Discord!")
         else:
